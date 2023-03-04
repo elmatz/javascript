@@ -49,3 +49,38 @@ typeof 30; // number
 typeof true; // boolean
 typeof {}; // object
 typeof []; // objetc but it's an array
+
+// Null
+const myName2 = null;
+console.log(myName2);
+
+// undefined
+let myName3;
+console.log(myName3);
+
+// Diferences between Null and Undefined
+let cat = {
+    name:"Michi",
+    age:2,
+    owner:null
+};
+console.log(cat.owner); // Null
+
+// Symbol: it's used to representy unique values
+const symbol = Symbol();
+
+let dog = {
+    name: "Mofles",
+    age: 6,
+    [symbol]:"Unique Identifier"
+};
+console.log(dog[symbol]);
+
+const symbolCats = Symbol("Unique Identifier to cats");
+
+// Bigint
+const bigNumber2 = 12345678901234567890n;
+console.log(bigNumber2 + 1n); // 12345678901234567891n
+console.log(bigNumber2 * 2n); // 2469135780246913578n
+console.log(bigNumber2 / 3n); // 411218936707805260n
+
